@@ -26,8 +26,8 @@
                 for ($i = 50; $water > 0 && $i <= 250; $i += 50, $water -= 50, $sugarOfCup += $sugarAboutCup){
                     echo ("<p>Налито $i мл води</p>");
                 } 
-                echo ("<p>Насипано $sugarOfCup ч.л цукру</p>");
-                echo ("Опускаємо чайний пакетик на $timeOfTea хв");
+                echo ("<p>Насипано ". round($sugarOfCup) ." ч.л цукру</p>");
+                echo ("Опускаємо чайний пакетик на ". round($timeOfTea) ." хв");
                 echo ("<p>Чай заварюється</p>");
                 echo ("<p>Розмішуємо</p>");
                 if ($water == 0){
