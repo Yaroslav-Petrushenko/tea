@@ -25,7 +25,8 @@
                 for ($i = 50; $water > 0 && $i <= 250; $i += 50, $water -= 50, $sugarOfCup += $sugarAboutCup){
                     echo ("<p>Налито $i мл води</p>");
                 } 
-                echo ("<p>Насипано ". round($sugarOfCup) ." ч.л цукру</p>");
+                echo ("<p>Насипано ". round($sugarOfCup,2) ." ч.л цукру</p>");
+                $sugarOfCup = 0;
                 $timeOfTea = (2 / 250) * $i; //time about tea
                 echo ("Опускаємо чайний пакетик на $timeOfTea хв");
                 echo ("<p>Чай заварюється</p>");
