@@ -13,12 +13,12 @@
             <h2>Кількість чаю в мл</h2>
                     <label>
                         <input name="water" type="range" min="50" max="1000" value="50" step="50" oninput="this.nextElementSibling.value = this.value">
-                        <input step="50" oninput="this.previousElementSibling.value = this.value">
+                        <input step="50" value="50" oninput="this.previousElementSibling.value = this.value">
                     </label>
             <h2>Кількість sugar</h2>        
                     <label>
                         <input name="sugar" type="range" min="0" max="7" value="0" step="0.5" oninput="this.nextElementSibling.value = this.value">
-                        <input step="0.5" oninput="this.previousElementSibling.value = this.value">
+                        <input step="0.5" value="0" oninput="this.previousElementSibling.value = this.value">
                     </label>
                     <label>
                         <input type="submit" value="Zakaz">

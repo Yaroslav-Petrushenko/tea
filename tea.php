@@ -18,16 +18,16 @@
             $cup = $waterCup;
             $sugarAboutCup = $sugar / $water * 50; //sugar about 50ml/water
             $sugarOfCup = 0;
-            $timeOfTea = (2 / 250) * 50; //time about tea
             echo ("<p>Water ".$water ."</p>Sugar ".$sugar);
-        
+            
             while ($water > 0) {
                 $cup++;
                 for ($i = 50; $water > 0 && $i <= 250; $i += 50, $water -= 50, $sugarOfCup += $sugarAboutCup){
                     echo ("<p>Налито $i мл води</p>");
                 } 
                 echo ("<p>Насипано ". round($sugarOfCup) ." ч.л цукру</p>");
-                echo ("Опускаємо чайний пакетик на ". round($timeOfTea) ." хв");
+                $timeOfTea = (2 / 250) * $i; //time about tea
+                echo ("Опускаємо чайний пакетик на $timeOfTea хв");
                 echo ("<p>Чай заварюється</p>");
                 echo ("<p>Розмішуємо</p>");
                 if ($water == 0){
